@@ -1,4 +1,4 @@
-
+#for debugbuild , the dockercompose will load dockerfile.debug
 #for debug
 # Stage 1
 FROM node:10 as react-build
@@ -17,8 +17,8 @@ CMD ["npm","start"]
 #EXPOSE 80
 #CMD ["nginx", "-g", "daemon off;"]
 
-
-#for prod
+#################################################################################
+#for prod build , the dockercompose will load dockerfile.prod
 # Stage 1
 FROM node:10 as react-build
 WORKDIR /app

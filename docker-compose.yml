@@ -5,7 +5,7 @@ services:
     restart: always
     build:
       context: ./client
-      dockerfile: client/Dockerfile.debug
+      dockerfile: Dockerfile.debug
     volumes:
       - ./client:/app
     ports:
@@ -15,7 +15,7 @@ services:
     restart: always
     build:
       context: ./client
-      dockerfile: client/Dockerfile.prod
+      dockerfile: Dockerfile.prod
     ports:
       - '80:80'
   serverapp_debug:
