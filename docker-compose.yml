@@ -1,29 +1,33 @@
 version: '3'
 services:
-  clientappdebug:
-    container_name: clientcontainerdebug
+  clientapp_debug:
+    container_name: clientcontainer_debug
     restart: always
-    build: ./client
+    build:
+      context: ./client
+      dockerfile: client/Dockerfile.debug
     volumes:
       - ./client:/app
     ports:
       - '3000:3000'
-  clientappprod:
-    container_name: clientcontainerprod
+  clientapp_prod:
+    container_name: clientcontainer_prod
     restart: always
-    build: ./client
+    build:
+      context: ./client
+      dockerfile: client/Dockerfile.prod
     ports:
       - '80:80'
-  serversidedebug:
-    container_name: servercontainerdebug
+  serverapp_debug:
+    container_name: servercontainer_debug
     restart: always
     build: ./server
     ports:
       - '3001:3001'
-  serversideprod:
-    container_name: servercontainerprod
-    restart: always
-    build: ./server
-    ports:
-      - '3001:3001'
+#  serversideprod:
+#    container_name: servercontainerprod
+#    restart: always
+#    build: ./server
+#    ports:
+#      - '3001:3001'
 
