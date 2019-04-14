@@ -15,5 +15,5 @@ COPY . .
 # Exports
 EXPOSE 3001
 #RUN npm start
-CMD ["npm", "run","start-dev"]
+CMD ["npm", "start"]
 
