@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3c587b6-7bb6-4e0b-802d-9bacd1614184" name="Default Changelist" comment="dockerfile deployments">
+    <list default="true" id="e3c587b6-7bb6-4e0b-802d-9bacd1614184" name="Default Changelist" comment="adding">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,16 +69,25 @@
         <entry file="file://$PROJECT_DIR$/client/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="345">
+              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -109,6 +116,7 @@
         <option value="$PROJECT_DIR$/client/Dockerfile" />
         <option value="$PROJECT_DIR$/server/package.json" />
         <option value="$PROJECT_DIR$/server/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -130,16 +138,6 @@
             <path>
               <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
               <item name="fullstackreacttemplate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullstackreacttemplate" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullstackreacttemplate" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -176,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.client/Dockerfile">
+  <component name="RunManager" selected="Docker.server/Dockerfile">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -204,9 +202,17 @@
         <settings>
           <option name="buildCliOptions" value="" />
           <option name="command" value="" />
-          <option name="containerName" value="clientdocker" />
+          <option name="containerName" value="clientcontainer" />
           <option name="entrypoint" value="" />
-          <option name="imageTag" value="clientdocker" />
+          <option name="imageTag" value="clientimage" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostPort" value="80" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
           <option name="commandLineOptions" value="" />
           <option name="sourceFilePath" value="client/Dockerfile" />
         </settings>
@@ -220,7 +226,7 @@
           <option name="command" value="" />
           <option name="containerName" value="serverdocker" />
           <option name="entrypoint" value="" />
-          <option name="imageTag" value="serverdocker" />
+          <option name="imageTag" value="serverimage" />
           <option name="portBindings">
             <list>
               <DockerPortBindingImpl>
@@ -254,7 +260,7 @@
       <updated>1555253335676</updated>
       <workItem from="1555253342993" duration="2105000" />
       <workItem from="1555263655093" duration="472000" />
-      <workItem from="1555264150604" duration="601000" />
+      <workItem from="1555264150604" duration="1101000" />
     </task>
     <task id="LOCAL-00001" summary="adding dockerfile">
       <created>1555254864290</created>
@@ -270,17 +276,24 @@
       <option name="project" value="LOCAL" />
       <updated>1555255004953</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="server side adding nodemon">
+      <created>1555264775857</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555264775857</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3178000" />
+    <option name="totallyTimeSpent" value="3678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25377283" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25377283" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -294,7 +307,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Docker" order="7" visible="true" weight="0.32925898" />
+      <window_info anchor="bottom" id="Docker" order="7" visible="true" weight="0.32925898" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
@@ -317,7 +330,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding dockerfile" />
     <MESSAGE value="dockerfile deployments" />
-    <option name="LAST_COMMIT_MESSAGE" value="dockerfile deployments" />
+    <MESSAGE value="server side adding nodemon" />
+    <option name="LAST_COMMIT_MESSAGE" value="server side adding nodemon" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/package.json">
@@ -358,13 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -374,8 +381,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="345">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

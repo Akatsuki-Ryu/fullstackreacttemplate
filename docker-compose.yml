@@ -1,0 +1,15 @@
+version: '3'
+services:
+  clientapp:
+    container_name: clientcontainer
+    restart: always
+    build: ./client
+    ports:
+      - '80:80'
+  serverside:
+    container_name: servercontainer
+    restart: always
+    build: ./server
+    ports:
+      - '3001:3001'
+
