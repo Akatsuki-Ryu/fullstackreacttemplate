@@ -1,13 +1,27 @@
 version: '3'
 services:
-  clientapp:
-    container_name: clientcontainer
+  clientappdebug:
+    container_name: clientcontainerdebug
+    restart: always
+    build: ./client
+    volumes:
+      - ./client:/app
+    ports:
+      - '3000:3000'
+  clientappprod:
+    container_name: clientcontainerprod
     restart: always
     build: ./client
     ports:
       - '80:80'
-  serverside:
-    container_name: servercontainer
+  serversidedebug:
+    container_name: servercontainerdebug
+    restart: always
+    build: ./server
+    ports:
+      - '3001:3001'
+  serversideprod:
+    container_name: servercontainerprod
     restart: always
     build: ./server
     ports:

@@ -2,8 +2,9 @@
 FROM node:10 as react-build
 WORKDIR /app
 COPY . ./
-RUN yarn
-RUN yarn build
+#RUN yarn
+#RUN yarn build
+CMD ["npm","start"]
 
 
 # Stage 2 - the production environment with nginx
