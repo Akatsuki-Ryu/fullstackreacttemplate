@@ -38,4 +38,26 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+////////////////////////////////////////////////////////////////customized code based on express akabox
+//
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+// app.set('view engine', 'ejs');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+
+// Connect to MongoDB
+mongoose
+    .connect(
+        'mongodb://mongodbapp:27017/fullstackreacttemplate',
+        { useNewUrlParser: true }
+    )
+    .then(() => console.log('MongoDB Connected'))
+    .catch(err => console.log(err));
+
+
+
+
+
 module.exports = app;
