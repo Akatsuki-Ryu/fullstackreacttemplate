@@ -1,9 +1,14 @@
 # Stage 1
 FROM node:10 as react-build
 WORKDIR /app
-COPY . ./
-#RUN yarn
-#RUN yarn build
+
+# Install dependencies
+COPY package.json .
+#RUN npm install
+
+# Bundle app source
+COPY . .
+
 EXPOSE 3000
 CMD ["npm","start"]
 
