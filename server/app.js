@@ -47,14 +47,20 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 
 
-// Connect to MongoDB
-mongoose
-    .connect(
-        'mongodb://mongodbapp:27017/fullstackreacttemplate',
-        { useNewUrlParser: true }
-    )
-    .then(() => console.log('MongoDB Connected'))
-    .catch(err => console.log(err));
+// // Connect to MongoDB
+// mongoose
+//     .connect(
+//         'mongodb://mongodbapp:27017/fullstackreacttemplate',
+//         { useNewUrlParser: true }
+//     )
+//     .then(() => console.log('MongoDB Connected=============================='))
+//     .catch(err => {
+//       console.log("DB Error ==============================================");
+//       console.log(err);
+//
+//     });
+//
+// const Item = require('./models/Item');
 
 
 
