@@ -42,7 +42,7 @@ app.use(function(err, req, res, next) {
 //
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-// app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
