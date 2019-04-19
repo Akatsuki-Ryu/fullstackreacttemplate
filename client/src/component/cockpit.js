@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-class Personlistcompo extends Component {
+class Cockpitcompo extends Component {
     render() {
         return (
             <div>
-                this is person compo
+                this is the cockpit component
             </div>
         );
     }
 }
 
-export default Personlistcompo;
+export default Cockpitcompo;
