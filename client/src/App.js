@@ -163,10 +163,18 @@ class App extends Component {
                 </div>
             )
         }
+
+        let classes = '';
+        if (this.state.persons.length === 2) {
+            classes = 'red';
+        }
+        if (this.state.persons.length === 1) {
+            classes = 'purple';
+        }
         return (
             <div className="App">
 
-                <h1>this is title </h1>
+                <h1 className={classes}>this is title </h1>
 
                 <button
                     style={inlinestyle}
