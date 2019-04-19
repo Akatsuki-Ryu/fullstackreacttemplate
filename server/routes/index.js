@@ -6,7 +6,12 @@ const mongoose = require('mongoose');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index', {title: 'Express powered by akabox'});
+    // res.render('index', {title: 'Express powered by akabox'});
+    Item.find()//loading from database
+        .then(items => {
+            res.render('index', {items});
+        })
+        .catch(err => res.status(404).json({msg: 'No items found'}));
 });
 
 router.get('/dbtest',  (req, res) => {
@@ -19,7 +24,6 @@ router.get('/db', (req, res) => {
     Item.find()//loading from database
         .then(items => {
             res.render('index', {items});
-            console.log(items);
         })
         .catch(err => res.status(404).json({msg: 'No items found'}));
 });
