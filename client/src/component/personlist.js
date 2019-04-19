@@ -25,7 +25,8 @@ class Personlistcompo extends Component {
                                 nameattr={data.name}
                                 ageattr={data.age}
                                 namechangedattr={(event) => this.props.namechangedhandlerattr(event, index)}
-                                deltepersonattr={() => this.props.deletepersonhandlerattr(index)}>
+                                deltepersonattr={() => this.props.deletepersonhandlerattr(index)}
+                                posistion={index}>
                             </Personcomponent>
                         );
                     })}

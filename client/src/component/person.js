@@ -3,6 +3,13 @@ import './person.css'
 import PropTypes from 'prop-types'
 
 class Personcomponent extends Component {
+    componentDidMount() {
+        if (this.props.posistion === 0) {
+            this.inputelement.focus();
+        }
+
+    }
+
     render() {
         const randomnum = () => {
             let testfuncret = Math.floor(Math.random() * 100);
@@ -16,7 +23,12 @@ class Personcomponent extends Component {
                 number {this.props.ageattr}
                 <br/>
                 {this.props.children}
-                <input type="text" value={this.props.nameattr} onChange={this.props.namechangedattr}/>
+                <input type="text"
+                       ref={(inputref) => {
+                           this.inputelement = inputref;
+                       }}
+                       value={this.props.nameattr}
+                       onChange={this.props.namechangedattr}/>
                 <button onClick={this.props.deltepersonattr}>delete</button>
             </div>
         );
