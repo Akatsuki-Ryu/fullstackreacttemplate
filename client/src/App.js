@@ -127,36 +127,8 @@ class App extends Component {
     render() {
 
 
-        let person = null;
-        if (this.state.showperson === true) {
-            // inlinestyle.backgroundColor = 'red'; //todo inline contiditional styling
-            person = (
-                <div>
 
-                    {/*<button*/}
-                    {/*    className="testbutton"*/}
-                    {/*    onClick={() => this.buttonclickhandler("name from arrow green")}>a button*/}
-                    {/*</button>*/}
-                    {/*<button*/}
-                    {/*    style={inlinestyle}*/}
-                    {/*    onClick={() => this.buttonclickhandler("name from arrow red")}>a button*/}
-                    {/*</button>*/}
 
-                    {this.state.persons.map((data, index) => {
-                        return (
-                            <Personcomponent
-                                key={data.id}
-                                nameattr={data.name}
-                                ageattr={data.age}
-                                namechangedattr={(event) => this.namechangedhandler(event, index)}
-                                deltepersonattr={() => this.deletepersonhandler(index)}>
-                            </Personcomponent>
-                        );
-                    })}
-
-                </div>
-            )
-        }
 
 
         return (
@@ -165,8 +137,12 @@ class App extends Component {
                 <Cockpitcompo
                     stateattr={this.state}
                     togglelisthandlerattr = {this.togglelisthandler}/>
-                {person}
+
                 <Personlistcompo
+                    stateattr ={this.state}
+                    namechangedhandler = {this.namechangedhandler}
+                    deletepersonhandler={this.deletepersonhandler}
+
                 />
             </div>
         )
