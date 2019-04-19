@@ -75,12 +75,16 @@ class App extends Component {
                 <Personcomponent
                     nameattr={this.state.persons[1].name}
                     ageattr={this.state.persons[1].age}
-                    clickattr={this.buttonclickhandler.bind(this, "slot2", 13)}>
+                    clickattr={this.buttonclickhandler.bind(this, "slot2", 13)}
+                    changed={this.namechangedhandler}>
                     children text (can be html strucutre)
                 </Personcomponent>
 
                 <br/>
-                <Personcomponent nameattr={this.state.persons[2].name} ageattr={this.state.persons[2].age}/>
+                <Personcomponent
+                    nameattr={this.state.persons[2].name}
+                    ageattr={this.state.persons[2].age}
+                    changed={this.namechangedhandler}/>
             </div>
         )
             ;
