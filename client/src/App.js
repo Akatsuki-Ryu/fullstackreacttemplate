@@ -9,7 +9,7 @@ class App extends Component {
                 <h1>this is title </h1>
                 <Personcomponent name="aka" age="10"/>
                 <br/>
-                <Personcomponent>children text </Personcomponent>
+                <Personcomponent>children text (can be html strucutre ) </Personcomponent>
                 <br/>
                 <Personcomponent/>
             </div>
