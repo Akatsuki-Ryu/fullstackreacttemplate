@@ -47,23 +47,36 @@ class App extends Component {
         })
     }
 
-    namechangedhandler = (event) => {
-        console.log("namechanged");
+    namechangedhandler = (event,index) => {
+        console.log("namechanged  ");
+        const personindex = this.state.persons.findIndex(pperson=>{
+            return pperson.id === index;
+        });
+
+        const persondata = {...this.state.persons[personindex]};
+
+        persondata.name = event.target.value;
+        const persons = [...this.state.persons];
+        persons[personindex] = persondata;
+
         this.setState({
-            persons: [
-                {
-                    name: "aka",
-                    age: 10
-                }, {
-                    name: event.target.value,
-                    age: 20
-                },
-                {
-                    name: 'aka',
-                    age: 99
-                }
-            ],
+            persons: persons
         })
+        // this.setState({
+        //     persons: [
+        //         {
+        //             name: "aka",
+        //             age: 10
+        //         }, {
+        //             name: event.target.value,
+        //             age: 20
+        //         },
+        //         {
+        //             name: 'aka',
+        //             age: 99
+        //         }
+        //     ],
+        // })
     }
 
     togglelisthandler = () => {
@@ -123,7 +136,7 @@ class App extends Component {
                                 nameattr={data.name}
                                 ageattr={data.age}
                                 clickattr={this.buttonclickhandler.bind(this, 'component', 12)}
-                                changed={this.namechangedhandler}
+                                namechangedattr={(event)=>this.namechangedhandler(event,data.id)}
                                 deltepersonattr={() => this.deletepersonhandler(index)}>{index}
                             </Personcomponent>
                         );
