@@ -9,7 +9,7 @@ class Personcomponent extends Component {
         }
         return (
             <div className="Person">
-                <button onClick={this.props.clickattr}>in component </button>
+                {/*<button onClick={this.props.clickattr}>in component </button>*/}
                 <p>component static text</p>
                 <br/>
                 attribute name {this.props.nameattr}
@@ -20,6 +20,7 @@ class Personcomponent extends Component {
                 <br/>
                 {this.props.children}
                 <input type="text" value={this.props.nameattr} onChange={this.props.changed} />
+                <button onClick={this.props.deltepersonattr}>delete</button>
             </div>
         );
     }

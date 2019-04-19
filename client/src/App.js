@@ -20,7 +20,7 @@ class App extends Component {
             }
         ],
         otherstate: 'something',
-        showperson: false
+        showperson: true
     };
 
     buttonclickhandler = (newname, age) => {
@@ -70,6 +70,18 @@ class App extends Component {
 
     }
 
+    deletepersonhandler = (index) => {
+
+        // console.log("this person is deleted " + index);
+        const persondata = this.state.persons;
+        persondata.splice(index, 1);
+        this.setState({
+            persons:persondata
+        })
+
+    }
+
+
     render() {
         const inlinestyle = {
             backgroundColor: 'red',
@@ -86,33 +98,25 @@ class App extends Component {
                 <div>
                     <button
                         className="testbutton"
-                        onClick={() => this.buttonclickhandler("name from arrow")}>a button
+                        onClick={() => this.buttonclickhandler("name from arrow green")}>a button
                     </button>
                     <button
                         style={inlinestyle}
-                        onClick={() => this.buttonclickhandler("name from arrow")}>a button
+                        onClick={() => this.buttonclickhandler("name from arrow red")}>a button
                     </button>
                     <h1>this is title </h1>
-                    <Personcomponent
-                        nameattr={this.state.persons[0].name}
-                        ageattr={this.state.persons[0].age}
-                        clickattr={this.buttonclickhandler.bind(this, 'component', 12)}
-                        changed={this.namechangedhandler}>
-                    </Personcomponent>
-                    <br/>
-                    <Personcomponent
-                        nameattr={this.state.persons[1].name}
-                        ageattr={this.state.persons[1].age}
-                        clickattr={this.buttonclickhandler.bind(this, "slot2", 13)}
-                        changed={this.namechangedhandler}>
-                        children text (can be html strucutre)
-                    </Personcomponent>
+                    {this.state.persons.map((data, index) => {
+                        return (
+                            <Personcomponent
+                                nameattr={data.name}
+                                ageattr={data.age}
+                                clickattr={this.buttonclickhandler.bind(this, 'component', 12)}
+                                changed={this.namechangedhandler}
+                                deltepersonattr={() => this.deletepersonhandler(index)}>{index}
+                            </Personcomponent>
+                        )
+                    })}
 
-                    <br/>
-                    <Personcomponent
-                        nameattr={this.state.persons[2].name}
-                        ageattr={this.state.persons[2].age}
-                        changed={this.namechangedhandler}/>
                 </div>
             )
         }
