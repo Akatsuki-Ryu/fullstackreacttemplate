@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './person.css'
 import PropTypes from 'prop-types'
+import {Authcontext} from "../App";
 
 class Personcomponent extends Component {
     constructor() {
@@ -8,6 +9,7 @@ class Personcomponent extends Component {
         this.inputelement = React.createRef();
 
     }
+
     componentDidMount() {
         if (this.props.posistion === 0) {
             this.inputelement.current.focus();
@@ -23,6 +25,10 @@ class Personcomponent extends Component {
         return (
             <div className="Person">
                 {/*<p>component static text</p>*/}
+                <Authcontext.Consumer>
+                    {auth => auth ? <p>i am login</p> : null}
+
+                </Authcontext.Consumer>
                 name {this.props.nameattr}
                 <br/>
                 number {this.props.ageattr}

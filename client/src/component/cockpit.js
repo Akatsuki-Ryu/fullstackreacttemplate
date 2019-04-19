@@ -40,6 +40,7 @@ class Cockpitcompo extends Component {
         console.log(this.props);
         let dynaclasses = '';
         let toggletext = '';
+        let logintext = '';
         if (this.props.stateattr.persons.length === 2) {
             dynaclasses = 'red';
         }
@@ -63,6 +64,13 @@ class Cockpitcompo extends Component {
             toggletext = "open ";
         }
 
+        if (this.props.stateattr.login === true) {
+            logintext = 'logout';
+        } else {
+            logintext = 'login';
+        }
+
+
         return (
             <div>
                 <h1 className={dynaclasses}>{this.props.apptitleattr} </h1>
@@ -70,6 +78,9 @@ class Cockpitcompo extends Component {
                 <button
                     style={inlinestyle}
                     onClick={this.props.togglelisthandlerattr}>{toggletext}
+                </button>
+                <button
+                    onClick={this.props.toggleloginhandlerattr}>{logintext}
                 </button>
             </div>
         );

@@ -5,6 +5,7 @@ import uuid from 'uuid'
 import Personlistcompo from "./component/personlist";
 import Cockpitcompo from "./component/cockpit";
 
+export const Authcontext = React.createContext(false);
 
 class App extends Component {
     state = {
@@ -26,7 +27,8 @@ class App extends Component {
             }
         ],
         otherstate: 'something',
-        showperson: true
+        showperson: true,
+        login: false
     };
 
     apptitle = "this is a title";
@@ -71,6 +73,16 @@ class App extends Component {
 
     }
 
+    toggleloginhandler = () => {
+        const doeslogin = this.state.login;
+        console.log(doeslogin);
+
+        this.setState(
+            {login: !doeslogin}
+        )
+
+    }
+
     deletepersonhandler = (index) => {
 
         // console.log("this person is deleted " + index);
@@ -96,16 +108,19 @@ class App extends Component {
             <div className="App">
 
                 <Cockpitcompo
-                    apptitleattr ={this.apptitle}
+                    apptitleattr={this.apptitle}
                     stateattr={this.state}
-                    togglelisthandlerattr={this.togglelisthandler}/>
+                    togglelisthandlerattr={this.togglelisthandler}
+                    toggleloginhandlerattr={this.toggleloginhandler}/>
 
-                <Personlistcompo
-                    stateattr={this.state}
-                    namechangedhandlerattr={this.namechangedhandler}
-                    deletepersonhandlerattr={this.deletepersonhandler}
+                <Authcontext.Provider value={this.state.login}>
+                    <Personlistcompo
+                        stateattr={this.state}
+                        namechangedhandlerattr={this.namechangedhandler}
+                        deletepersonhandlerattr={this.deletepersonhandler}
 
-                />
+                    />
+                </Authcontext.Provider>
             </div>
         )
             ;
