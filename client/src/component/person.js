@@ -8,9 +8,14 @@ class Personcomponent extends Component {
         }
         return (
             <div>
-                this is person component
+                component static text
                 <br/>
-                {randomnum()}
+                attribute name {this.props.name}
+                <br/>
+                a random number from component  {randomnum()}
+                <br/>
+                an attribute number {this.props.age}
+
 
             </div>
         );
