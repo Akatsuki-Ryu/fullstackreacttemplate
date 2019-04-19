@@ -49,19 +49,38 @@ class App extends Component {
 
     namechangedhandler = (event,index) => {
         console.log("namechanged  ");
-        const personindex = this.state.persons.findIndex(pperson=>{
-            return pperson.id === index;
-        });
 
-        const persondata = {...this.state.persons[personindex]};
 
-        persondata.name = event.target.value;
-        const persons = [...this.state.persons];
-        persons[personindex] = persondata;
+        //search by id to find the index and update the value
+        // console.log(event);
+        // const personindex = this.state.persons.findIndex(pperson=>{
+        //     return pperson.id === index;
+        // });
+        //
+        // const newpersondata = {...this.state.persons[personindex]};
+        //
+        // newpersondata.name = event.target.value;
+        // const persons = [...this.state.persons];
+        // persons[personindex] = newpersondata;
+        //
+        // this.setState({
+        //     persons: persons
+        // })
 
-        this.setState({
-            persons: persons
-        })
+
+
+        //search index and update the value
+        const newpersondata = [...this.state.persons];
+        newpersondata[index].name = event.target.value;
+        this.setState(
+            {
+                persons:newpersondata
+            }
+        )
+
+
+
+
         // this.setState({
         //     persons: [
         //         {
@@ -129,14 +148,14 @@ class App extends Component {
                         onClick={() => this.buttonclickhandler("name from arrow red")}>a button
                     </button>
                     <h1>this is title </h1>
-                    {this.state.persons.map((data, index) => {
+                    {this.state.persons.map((data,index ) => {
                         return (
                             <Personcomponent
                                 key={data.id}
                                 nameattr={data.name}
                                 ageattr={data.age}
                                 clickattr={this.buttonclickhandler.bind(this, 'component', 12)}
-                                namechangedattr={(event)=>this.namechangedhandler(event,data.id)}
+                                namechangedattr={(event)=>this.namechangedhandler(event,index)}
                                 deltepersonattr={() => this.deletepersonhandler(index)}>{index}
                             </Personcomponent>
                         );
