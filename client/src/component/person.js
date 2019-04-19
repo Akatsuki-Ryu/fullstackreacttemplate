@@ -24,7 +24,7 @@ class Personcomponent extends Component {
                 <br/>
                 {this.props.children}
                 <input type="text"
-                       ref={(inputref) => {
+                       ref={(inputref) => {// this is a way of using reference to quickly take one thing out
                            this.inputelement = inputref;
                        }}
                        value={this.props.nameattr}
