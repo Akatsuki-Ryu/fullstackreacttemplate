@@ -7,19 +7,20 @@ class App extends Component {
     state = {
         persons: [
             {
-                name: 'somename',
-                age: 10
-            },
-            {
-                name: 'person2',
+                name: 'person1',
                 age: 11
             },
             {
-                name: 'aka',
+                name: 'person2',
                 age: 12
+            },
+            {
+                name: 'person3',
+                age: 13
             }
         ],
-        otherstate: 'something'
+        otherstate: 'something',
+        showperson: false
     };
 
     buttonclickhandler = (newname, age) => {
@@ -60,6 +61,14 @@ class App extends Component {
         })
     }
 
+    togglelisthandler = () => {
+        const doesshow = this.state.showperson;
+        // console.log("toggleperson handler");
+        this.setState(
+            {showperson:!doesshow}
+        )
+
+    }
 
     render() {
         const inlinestyle = {
@@ -73,34 +82,41 @@ class App extends Component {
         return (
             <div className="App">
                 <button
-                    className="testbutton"
-                    onClick={() => this.buttonclickhandler("name from arrow")}>a button
+                    onClick={this.togglelisthandler}>toggle
                 </button>
-                <button
-                    style={inlinestyle}
-                    onClick={() => this.buttonclickhandler("name from arrow")}>a button
-                </button>
-                <h1>this is title </h1>
-                <Personcomponent
-                    nameattr={this.state.persons[0].name}
-                    ageattr={this.state.persons[0].age}
-                    clickattr={this.buttonclickhandler.bind(this, 'component', 12)}
-                    changed={this.namechangedhandler}>
-                </Personcomponent>
-                <br/>
-                <Personcomponent
-                    nameattr={this.state.persons[1].name}
-                    ageattr={this.state.persons[1].age}
-                    clickattr={this.buttonclickhandler.bind(this, "slot2", 13)}
-                    changed={this.namechangedhandler}>
-                    children text (can be html strucutre)
-                </Personcomponent>
+                {this.state.showperson === true ?
+                    <div>
+                        <button
+                            className="testbutton"
+                            onClick={() => this.buttonclickhandler("name from arrow")}>a button
+                        </button>
+                        <button
+                            style={inlinestyle}
+                            onClick={() => this.buttonclickhandler("name from arrow")}>a button
+                        </button>
+                        <h1>this is title </h1>
+                        <Personcomponent
+                            nameattr={this.state.persons[0].name}
+                            ageattr={this.state.persons[0].age}
+                            clickattr={this.buttonclickhandler.bind(this, 'component', 12)}
+                            changed={this.namechangedhandler}>
+                        </Personcomponent>
+                        <br/>
+                        <Personcomponent
+                            nameattr={this.state.persons[1].name}
+                            ageattr={this.state.persons[1].age}
+                            clickattr={this.buttonclickhandler.bind(this, "slot2", 13)}
+                            changed={this.namechangedhandler}>
+                            children text (can be html strucutre)
+                        </Personcomponent>
 
-                <br/>
-                <Personcomponent
-                    nameattr={this.state.persons[2].name}
-                    ageattr={this.state.persons[2].age}
-                    changed={this.namechangedhandler}/>
+                        <br/>
+                        <Personcomponent
+                            nameattr={this.state.persons[2].name}
+                            ageattr={this.state.persons[2].age}
+                            changed={this.namechangedhandler}/>
+                    </div>
+                    : null}
             </div>
         )
             ;
