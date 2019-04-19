@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './person.css'
+import PropTypes from 'prop-types'
 
 class Personcomponent extends Component {
     render() {
@@ -22,4 +23,17 @@ class Personcomponent extends Component {
     }
 }
 
+//ensure the right data type , good for teamworks
+Personcomponent.proptype = {
+    nameattr: PropTypes.string,
+    ageattr: PropTypes.number,
+    namechangedattr: PropTypes.func,
+    deltepersonattr: PropTypes.func
+
+}
+
 export default Personcomponent;
+
+
+
+
