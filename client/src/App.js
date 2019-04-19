@@ -65,7 +65,7 @@ class App extends Component {
         const doesshow = this.state.showperson;
         // console.log("toggleperson handler");
         this.setState(
-            {showperson:!doesshow}
+            {showperson: !doesshow}
         )
 
     }
@@ -79,44 +79,51 @@ class App extends Component {
             cursor: 'pointer'
 
         }
+
+        let person = null;
+        if (this.state.showperson === true) {
+            person = (
+                <div>
+                    <button
+                        className="testbutton"
+                        onClick={() => this.buttonclickhandler("name from arrow")}>a button
+                    </button>
+                    <button
+                        style={inlinestyle}
+                        onClick={() => this.buttonclickhandler("name from arrow")}>a button
+                    </button>
+                    <h1>this is title </h1>
+                    <Personcomponent
+                        nameattr={this.state.persons[0].name}
+                        ageattr={this.state.persons[0].age}
+                        clickattr={this.buttonclickhandler.bind(this, 'component', 12)}
+                        changed={this.namechangedhandler}>
+                    </Personcomponent>
+                    <br/>
+                    <Personcomponent
+                        nameattr={this.state.persons[1].name}
+                        ageattr={this.state.persons[1].age}
+                        clickattr={this.buttonclickhandler.bind(this, "slot2", 13)}
+                        changed={this.namechangedhandler}>
+                        children text (can be html strucutre)
+                    </Personcomponent>
+
+                    <br/>
+                    <Personcomponent
+                        nameattr={this.state.persons[2].name}
+                        ageattr={this.state.persons[2].age}
+                        changed={this.namechangedhandler}/>
+                </div>
+            )
+        }
         return (
             <div className="App">
                 <button
                     onClick={this.togglelisthandler}>toggle
                 </button>
-                {this.state.showperson === true ?
-                    <div>
-                        <button
-                            className="testbutton"
-                            onClick={() => this.buttonclickhandler("name from arrow")}>a button
-                        </button>
-                        <button
-                            style={inlinestyle}
-                            onClick={() => this.buttonclickhandler("name from arrow")}>a button
-                        </button>
-                        <h1>this is title </h1>
-                        <Personcomponent
-                            nameattr={this.state.persons[0].name}
-                            ageattr={this.state.persons[0].age}
-                            clickattr={this.buttonclickhandler.bind(this, 'component', 12)}
-                            changed={this.namechangedhandler}>
-                        </Personcomponent>
-                        <br/>
-                        <Personcomponent
-                            nameattr={this.state.persons[1].name}
-                            ageattr={this.state.persons[1].age}
-                            clickattr={this.buttonclickhandler.bind(this, "slot2", 13)}
-                            changed={this.namechangedhandler}>
-                            children text (can be html strucutre)
-                        </Personcomponent>
+                {person}
 
-                        <br/>
-                        <Personcomponent
-                            nameattr={this.state.persons[2].name}
-                            ageattr={this.state.persons[2].age}
-                            changed={this.namechangedhandler}/>
-                    </div>
-                    : null}
+
             </div>
         )
             ;
