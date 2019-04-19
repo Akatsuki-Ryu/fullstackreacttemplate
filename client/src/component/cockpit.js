@@ -2,11 +2,42 @@ import React, {Component} from 'react';
 
 class Cockpitcompo extends Component {
 
+    constructor(props) {
+        super(props);
+    }
 
+    componentWillMount() {
+        console.log("compoment will mount ");
+    }
+    //
+    componentDidMount() {
+        console.log("compoment did mount ");
+    }
+    //
+    // componentWillReceiveProps(nextProps) {
+    //
+    // }
+    //
+    // shouldComponentUpdate(nextProps, nextState) {
+    //
+    // }
+    //
+    // componentWillUpdate(nextProps, nextState) {
+    //
+    // }
+    //
+    // componentDidUpdate(prevProps, prevState) {
+    //
+    // }
+    //
+    // componentWillUnmount() {
+    //
+    // }
 
     render() {
         console.log(this.props);
         let dynaclasses = '';
+        let toggletext = '';
         if (this.props.stateattr.persons.length === 2) {
             dynaclasses = 'red';
         }
@@ -24,6 +55,10 @@ class Cockpitcompo extends Component {
 
         if (this.props.stateattr.showperson === true) {
             inlinestyle.backgroundColor = 'red';
+            toggletext = "close ";
+        }else{
+            inlinestyle.backgroundColor = 'green';
+            toggletext = "open ";
         }
 
         return (
@@ -32,7 +67,7 @@ class Cockpitcompo extends Component {
 
                 <button
                     style={inlinestyle}
-                    onClick={this.props.togglelisthandlerattr}>toggle
+                    onClick={this.props.togglelisthandlerattr}>{toggletext}
                 </button>
             </div>
         );
@@ -40,3 +75,4 @@ class Cockpitcompo extends Component {
 }
 
 export default Cockpitcompo;
+
