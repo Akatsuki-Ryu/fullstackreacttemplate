@@ -124,7 +124,7 @@ class App extends Component {
 
     render() {
         const inlinestyle = {
-            backgroundColor: 'red',
+            backgroundColor: 'green',
             font: 'inherit',
             border: '1px solid blue',
             padding: '8px',
@@ -132,10 +132,13 @@ class App extends Component {
 
         }
 
+
         let person = null;
         if (this.state.showperson === true) {
+            inlinestyle.backgroundColor = 'red';
             person = (
                 <div>
+
                     {/*<button*/}
                     {/*    className="testbutton"*/}
                     {/*    onClick={() => this.buttonclickhandler("name from arrow green")}>a button*/}
@@ -166,6 +169,7 @@ class App extends Component {
                 <h1>this is title </h1>
 
                 <button
+                    style={inlinestyle}
                     onClick={this.togglelisthandler}>toggle
                 </button>
                 {person}
