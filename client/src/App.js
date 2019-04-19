@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
 import './component/person.css'
-import Personcomponent from "./component/person";
 import uuid from 'uuid'
 import Personlistcompo from "./component/personlist";
 import Cockpitcompo from "./component/cockpit";
@@ -127,21 +126,17 @@ class App extends Component {
     render() {
 
 
-
-
-
-
         return (
             <div className="App">
 
                 <Cockpitcompo
                     stateattr={this.state}
-                    togglelisthandlerattr = {this.togglelisthandler}/>
+                    togglelisthandlerattr={this.togglelisthandler}/>
 
                 <Personlistcompo
-                    stateattr ={this.state}
-                    namechangedhandler = {this.namechangedhandler}
-                    deletepersonhandler={this.deletepersonhandler}
+                    stateattr={this.state}
+                    namechangedhandlerattr={this.namechangedhandler}
+                    deletepersonhandlerattr={this.deletepersonhandler}
 
                 />
             </div>
