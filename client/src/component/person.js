@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './person.css'
 
 class Personcomponent extends Component {
     render() {
@@ -7,7 +8,7 @@ class Personcomponent extends Component {
             return testfuncret;
         }
         return (
-            <div>
+            <div className="Person">
                 <button onClick={this.props.clickattr}>in component </button>
                 <p>component static text</p>
                 <br/>
@@ -18,7 +19,7 @@ class Personcomponent extends Component {
                 an attribute number {this.props.ageattr}
                 <br/>
                 {this.props.children}
-                <input type="text" onChange={this.props.changed} value={this.props.nameattr}/>
+                <input type="text" value={this.props.nameattr} onChange={this.props.changed} />
             </div>
         );
     }
