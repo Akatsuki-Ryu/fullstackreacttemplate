@@ -73,10 +73,16 @@ class App extends Component {
     deletepersonhandler = (index) => {
 
         // console.log("this person is deleted " + index);
-        const persondata = this.state.persons;
+        // const persondata = this.state.persons;
+        // persondata.splice(index, 1);
+        // this.setState({
+        //     persons:persondata
+        // })
+
+        const persondata = [...this.state.persons];
         persondata.splice(index, 1);
         this.setState({
-            persons:persondata
+            persons: persondata
         })
 
     }
