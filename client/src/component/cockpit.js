@@ -24,7 +24,8 @@ class Cockpitcompo extends Component {
     }
 
     componentWillUpdate(nextProps, nextState) {
-        console.log("compoment did mount ");
+        console.log("compoment did update ");
+
     }
 
     componentDidUpdate(prevProps, prevState) {

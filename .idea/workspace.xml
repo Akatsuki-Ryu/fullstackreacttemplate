@@ -45,8 +45,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/component/cockpit.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="766">
-                  <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+                <state relative-caret-position="621">
+                  <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -498,20 +498,6 @@
       <workItem from="1555685669789" duration="6547000" />
       <workItem from="1555693086683" duration="3814000" />
     </task>
-    <task id="LOCAL-00006" summary="debug and prod docker for client">
-      <created>1555270507519</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1555270507519</updated>
-    </task>
-    <task id="LOCAL-00007" summary="file backup">
-      <created>1555270722459</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1555270722459</updated>
-    </task>
     <task id="LOCAL-00008" summary="description , test backend debug build">
       <created>1555271090683</created>
       <option name="number" value="00008" />
@@ -841,11 +827,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555701801267</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="button test dynamic">
+      <created>1555702719366</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1555702719366</updated>
+    </task>
+    <task id="LOCAL-00056" summary="live cycle of a component">
+      <created>1555703077456</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1555703077456</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49538000" />
+    <option name="totallyTimeSpent" value="50016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1417" extended-state="0" />
@@ -888,8 +888,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="passing attributes" />
-    <MESSAGE value="multiple passing in one function" />
     <MESSAGE value="two way binding" />
     <MESSAGE value="complete binding for other objects" />
     <MESSAGE value="style css" />
@@ -913,7 +911,9 @@
     <MESSAGE value="change name of the prop func to xxxxattr" />
     <MESSAGE value="code cleanup" />
     <MESSAGE value="passing a title as a var" />
-    <option name="LAST_COMMIT_MESSAGE" value="passing a title as a var" />
+    <MESSAGE value="button test dynamic" />
+    <MESSAGE value="live cycle of a component" />
+    <option name="LAST_COMMIT_MESSAGE" value="live cycle of a component" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/nginx.conf">
@@ -1082,8 +1082,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/component/cockpit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        <state relative-caret-position="621">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
         </state>
       </provider>
     </entry>
