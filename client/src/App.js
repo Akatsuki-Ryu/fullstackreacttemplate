@@ -40,27 +40,47 @@ class App extends Component {
         })
     }
 
+    namechangedhandler = (event) => {
+        console.log("namechanged");
+        this.setState({
+            persons: [
+                {
+                    name: "aka",
+                    age: 10
+                }, {
+                    name: event.target.value,
+                    age: 20
+                },
+                {
+                    name: 'aka',
+                    age: 99
+                }
+            ],
+        })
+    }
+
 
     render() {
         return (
             <div className="App">
-                <button onClick={this.buttonclickhandler.bind(this, "button",11)}>a button</button>
+                <button onClick={() => this.buttonclickhandler("name from arrow")}>a button</button>
                 <h1>this is title </h1>
                 <Personcomponent
                     nameattr={this.state.persons[0].name}
                     ageattr={this.state.persons[0].age}
-                    clickattr={this.buttonclickhandler.bind(this, 'component',12)}>
+                    clickattr={this.buttonclickhandler.bind(this, 'component', 12)}
+                    changed={this.namechangedhandler}>
                 </Personcomponent>
                 <br/>
                 <Personcomponent
                     nameattr={this.state.persons[1].name}
                     ageattr={this.state.persons[1].age}
-                    clickattr={this.buttonclickhandler.bind(this, "slot2",13)}>
+                    clickattr={this.buttonclickhandler.bind(this, "slot2", 13)}>
                     children text (can be html strucutre)
                 </Personcomponent>
 
                 <br/>
-                <Personcomponent name={this.state.persons[2].name} age={this.state.persons[2].age}/>
+                <Personcomponent nameattr={this.state.persons[2].name} ageattr={this.state.persons[2].age}/>
             </div>
         )
             ;

@@ -18,6 +18,7 @@ class Personcomponent extends Component {
                 an attribute number {this.props.ageattr}
                 <br/>
                 {this.props.children}
+                <input type="text" onChange={this.props.changed} value={this.props.nameattr}/>
             </div>
         );
     }
