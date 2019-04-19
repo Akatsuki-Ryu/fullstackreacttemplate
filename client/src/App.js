@@ -29,24 +29,6 @@ class App extends Component {
         showperson: true
     };
 
-    buttonclickhandler = (newname, age) => {
-        // console.log("click");
-        this.setState({
-            persons: [
-                {
-                    name: newname,
-                    age: age
-                }, {
-                    name: newname,
-                    age: age
-                },
-                {
-                    name: 'aka',
-                    age: 99
-                }
-            ],
-        })
-    }
 
     namechangedhandler = (event, index) => {
         console.log("namechanged  ");
@@ -78,27 +60,11 @@ class App extends Component {
             }
         )
 
-
-        // this.setState({
-        //     persons: [
-        //         {
-        //             name: "aka",
-        //             age: 10
-        //         }, {
-        //             name: event.target.value,
-        //             age: 20
-        //         },
-        //         {
-        //             name: 'aka',
-        //             age: 99
-        //         }
-        //     ],
-        // })
     }
 
     togglelisthandler = () => {
         const doesshow = this.state.showperson;
-        // console.log("toggleperson handler");
+
         this.setState(
             {showperson: !doesshow}
         )
