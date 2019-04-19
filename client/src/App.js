@@ -164,17 +164,17 @@ class App extends Component {
             )
         }
 
-        let classes = '';
+        let dynaclasses = '';
         if (this.state.persons.length === 2) {
-            classes = 'red';
+            dynaclasses = 'red';
         }
         if (this.state.persons.length === 1) {
-            classes = 'purple';
+            dynaclasses = 'purple';
         }
         return (
             <div className="App">
 
-                <h1 className={classes}>this is title </h1>
+                <h1 className={dynaclasses}>this is title </h1>
 
                 <button
                     style={inlinestyle}
