@@ -21,16 +21,16 @@ class App extends Component {
         otherstate: 'something'
     };
 
-    buttonclickhandler = (newname) => {
+    buttonclickhandler = (newname, age) => {
         // console.log("click");
         this.setState({
             persons: [
                 {
                     name: newname,
-                    age: 99
+                    age: age
                 }, {
                     name: newname,
-                    age: 99
+                    age: age
                 },
                 {
                     name: 'aka',
@@ -44,18 +44,18 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <button onClick={this.buttonclickhandler.bind(this, "button")}>a button</button>
+                <button onClick={this.buttonclickhandler.bind(this, "button",11)}>a button</button>
                 <h1>this is title </h1>
                 <Personcomponent
                     nameattr={this.state.persons[0].name}
                     ageattr={this.state.persons[0].age}
-                    clickattr={this.buttonclickhandler.bind(this, 'component')}>
+                    clickattr={this.buttonclickhandler.bind(this, 'component',12)}>
                 </Personcomponent>
                 <br/>
                 <Personcomponent
                     nameattr={this.state.persons[1].name}
                     ageattr={this.state.persons[1].age}
-                    clickattr={this.buttonclickhandler.bind(this, "slot2")}>
+                    clickattr={this.buttonclickhandler.bind(this, "slot2",13)}>
                     children text (can be html strucutre)
                 </Personcomponent>
 
