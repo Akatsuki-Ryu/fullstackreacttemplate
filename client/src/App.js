@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import './component/person.css'
 import Personcomponent from "./component/person";
 
 class App extends Component {
@@ -62,7 +63,7 @@ class App extends Component {
 
     render() {
         const inlinestyle = {
-            backgroundColor: 'white',
+            backgroundColor: 'red',
             font: 'inherit',
             border: '1px solid blue',
             padding: '8px',
@@ -71,6 +72,10 @@ class App extends Component {
         }
         return (
             <div className="App">
+                <button
+                    className="testbutton"
+                    onClick={() => this.buttonclickhandler("name from arrow")}>a button
+                </button>
                 <button
                     style={inlinestyle}
                     onClick={() => this.buttonclickhandler("name from arrow")}>a button
