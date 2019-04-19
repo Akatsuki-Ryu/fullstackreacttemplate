@@ -9,17 +9,13 @@ class Personcomponent extends Component {
         }
         return (
             <div className="Person">
-                {/*<button onClick={this.props.clickattr}>in component </button>*/}
-                <p>component static text</p>
+                {/*<p>component static text</p>*/}
+                name {this.props.nameattr}
                 <br/>
-                attribute name {this.props.nameattr}
-                <br/>
-                a random number from component {randomnum()}
-                <br/>
-                an attribute number {this.props.ageattr}
+                number {this.props.ageattr}
                 <br/>
                 {this.props.children}
-                <input type="text" value={this.props.nameattr} onChange={this.props.namechangedattr} />
+                <input type="text" value={this.props.nameattr} onChange={this.props.namechangedattr}/>
                 <button onClick={this.props.deltepersonattr}>delete</button>
             </div>
         );
