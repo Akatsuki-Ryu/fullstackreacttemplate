@@ -3,6 +3,8 @@ import './App.css';
 import './component/person.css'
 import Personcomponent from "./component/person";
 import uuid from 'uuid'
+import Personlistcompo from "./component/personlist";
+import Cockpitcompo from "./component/cockpit";
 
 
 class App extends Component {
@@ -123,19 +125,11 @@ class App extends Component {
 
 
     render() {
-        const inlinestyle = {
-            backgroundColor: 'green',
-            font: 'inherit',
-            border: '1px solid blue',
-            padding: '8px',
-            cursor: 'pointer'
-
-        }
 
 
         let person = null;
         if (this.state.showperson === true) {
-            inlinestyle.backgroundColor = 'red';
+            // inlinestyle.backgroundColor = 'red'; //todo inline contiditional styling
             person = (
                 <div>
 
@@ -164,24 +158,16 @@ class App extends Component {
             )
         }
 
-        let dynaclasses = '';
-        if (this.state.persons.length === 2) {
-            dynaclasses = 'red';
-        }
-        if (this.state.persons.length === 1) {
-            dynaclasses = 'purple';
-        }
+
         return (
             <div className="App">
 
-                <h1 className={dynaclasses}>this is title </h1>
-
-                <button
-                    style={inlinestyle}
-                    onClick={this.togglelisthandler}>toggle
-                </button>
+                <Cockpitcompo
+                    stateattr={this.state}
+                    togglelisthandlerattr = {this.togglelisthandler}/>
                 {person}
-
+                <Personlistcompo
+                />
             </div>
         )
             ;
