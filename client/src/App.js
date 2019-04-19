@@ -16,11 +16,25 @@ class App extends Component {
                 name: 'aka',
                 age: 12
             }
-        ]
+        ],
+        otherstate:'something'
     };
 
-    buttonclickhandler=()=>{
-        console.log("click");
+    buttonclickhandler = () => {
+        // console.log("click");
+        this.setState({ persons: [
+                {
+                    name: 'aka',
+                    age: 99
+                }, {
+                    name: 'aka',
+                    age: 99
+                },
+                {
+                    name: 'aka',
+                    age: 99
+                }
+            ],})
     }
 
 
