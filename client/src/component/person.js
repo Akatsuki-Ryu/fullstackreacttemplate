@@ -3,9 +3,14 @@ import './person.css'
 import PropTypes from 'prop-types'
 
 class Personcomponent extends Component {
+    constructor() {
+        super();
+        this.inputelement = React.createRef();
+
+    }
     componentDidMount() {
         if (this.props.posistion === 0) {
-            this.inputelement.focus();
+            this.inputelement.current.focus();
         }
 
     }
@@ -24,9 +29,7 @@ class Personcomponent extends Component {
                 <br/>
                 {this.props.children}
                 <input type="text"
-                       ref={(inputref) => {// this is a way of using reference to quickly take one thing out
-                           this.inputelement = inputref;
-                       }}
+                       ref={this.inputelement}
                        value={this.props.nameattr}
                        onChange={this.props.namechangedattr}/>
                 <button onClick={this.props.deltepersonattr}>delete</button>
