@@ -61,9 +61,20 @@ class App extends Component {
 
 
     render() {
+        const inlinestyle = {
+            backgroundColor: 'white',
+            font: 'inherit',
+            border: '1px solid blue',
+            padding: '8px',
+            cursor: 'pointer'
+
+        }
         return (
             <div className="App">
-                <button onClick={() => this.buttonclickhandler("name from arrow")}>a button</button>
+                <button
+                    style={inlinestyle}
+                    onClick={() => this.buttonclickhandler("name from arrow")}>a button
+                </button>
                 <h1>this is title </h1>
                 <Personcomponent
                     nameattr={this.state.persons[0].name}
