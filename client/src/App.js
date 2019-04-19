@@ -2,22 +2,24 @@ import React, {Component} from 'react';
 import './App.css';
 import './component/person.css'
 import Personcomponent from "./component/person";
+import uuid from 'uuid'
+
 
 class App extends Component {
     state = {
         persons: [
             {
-                id: '1',
+                id: uuid.v4(),
                 name: 'person1',
                 age: 11
             },
             {
-                id: '2',
+                id: uuid.v4(),
                 name: 'person2',
                 age: 12
             },
             {
-                id: '3',
+                id: uuid.v4(),
                 name: 'person3',
                 age: 13
             }
