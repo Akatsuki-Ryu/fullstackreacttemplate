@@ -14,25 +14,26 @@ class Cockpitcompo extends Component {
         console.log("compoment did mount ");
     }
     //
-    // componentWillReceiveProps(nextProps) {
-    //
-    // }
-    //
-    // shouldComponentUpdate(nextProps, nextState) {
-    //
-    // }
-    //
-    // componentWillUpdate(nextProps, nextState) {
-    //
-    // }
-    //
-    // componentDidUpdate(prevProps, prevState) {
-    //
-    // }
-    //
-    // componentWillUnmount() {
-    //
-    // }
+    componentWillReceiveProps(nextProps) {
+        console.log("component will get props ");
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log("compoment should update ");
+        return 1;
+    }
+
+    componentWillUpdate(nextProps, nextState) {
+        console.log("compoment did mount ");
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log("component Did Update ");
+    }
+
+    componentWillUnmount() {
+        console.log("compoment will mount ");
+    }
 
     render() {
         console.log(this.props);
