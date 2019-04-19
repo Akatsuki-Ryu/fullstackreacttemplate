@@ -8,13 +8,14 @@ class Personcomponent extends Component {
         }
         return (
             <div>
-                component static text
+                <button onClick={this.props.clickattr}>in component </button>
+                <p>component static text</p>
                 <br/>
-                attribute name {this.props.name}
+                attribute name {this.props.nameattr}
                 <br/>
                 a random number from component {randomnum()}
                 <br/>
-                an attribute number {this.props.age}
+                an attribute number {this.props.ageattr}
                 <br/>
                 {this.props.children}
             </div>

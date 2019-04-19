@@ -8,7 +8,8 @@ class App extends Component {
             {
                 name: 'somename',
                 age: 10
-            }, {
+            },
+            {
                 name: 'person2',
                 age: 11
             },
@@ -17,35 +18,47 @@ class App extends Component {
                 age: 12
             }
         ],
-        otherstate:'something'
+        otherstate: 'something'
     };
 
-    buttonclickhandler = () => {
+    buttonclickhandler = (newname) => {
         // console.log("click");
-        this.setState({ persons: [
+        this.setState({
+            persons: [
                 {
-                    name: 'aka',
+                    name: newname,
                     age: 99
                 }, {
-                    name: 'aka',
+                    name: newname,
                     age: 99
                 },
                 {
                     name: 'aka',
                     age: 99
                 }
-            ],})
+            ],
+        })
     }
 
 
     render() {
         return (
             <div className="App">
-                <button onClick={this.buttonclickhandler}>a button</button>
+                <button onClick={this.buttonclickhandler.bind(this, "button")}>a button</button>
                 <h1>this is title </h1>
-                <Personcomponent name={this.state.persons[0].name} age={this.state.persons[0].age}/>
+                <Personcomponent
+                    nameattr={this.state.persons[0].name}
+                    ageattr={this.state.persons[0].age}
+                    clickattr={this.buttonclickhandler.bind(this, 'component')}>
+                </Personcomponent>
                 <br/>
-                <Personcomponent>children text (can be html strucutre ) </Personcomponent>
+                <Personcomponent
+                    nameattr={this.state.persons[1].name}
+                    ageattr={this.state.persons[1].age}
+                    clickattr={this.buttonclickhandler.bind(this, "slot2")}>
+                    children text (can be html strucutre)
+                </Personcomponent>
+
                 <br/>
                 <Personcomponent name={this.state.persons[2].name} age={this.state.persons[2].age}/>
             </div>
