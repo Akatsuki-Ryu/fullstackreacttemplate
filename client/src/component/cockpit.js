@@ -28,7 +28,7 @@ class Cockpitcompo extends Component {
 
         return (
             <div>
-                <h1 className={dynaclasses}>this is title </h1>
+                <h1 className={dynaclasses}>{this.props.apptitleattr} </h1>
 
                 <button
                     style={inlinestyle}

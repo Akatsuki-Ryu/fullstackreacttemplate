@@ -29,7 +29,7 @@ class App extends Component {
         showperson: true
     };
 
-
+    apptitle = "this is a title";
     namechangedhandler = (event, index) => {
         console.log("namechanged  ");
 
@@ -96,6 +96,7 @@ class App extends Component {
             <div className="App">
 
                 <Cockpitcompo
+                    apptitleattr ={this.apptitle}
                     stateattr={this.state}
                     togglelisthandlerattr={this.togglelisthandler}/>
 
