@@ -22,6 +22,9 @@ class Cockpitcompo extends Component {
 
         }
 
+        if (this.props.stateattr.showperson === true) {
+            inlinestyle.backgroundColor = 'red';
+        }
 
         return (
             <div>
