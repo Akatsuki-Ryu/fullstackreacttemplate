@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-class Buildcontrol extends Component {
+class Buildcontrollist extends Component {
     render() {
         return (
             <div>
-                
+                build control
             </div>
         );
     }
 }
 
-export default Buildcontrol;
+export default Buildcontrollist;

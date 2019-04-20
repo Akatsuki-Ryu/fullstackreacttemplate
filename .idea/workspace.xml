@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c587b6-7bb6-4e0b-802d-9bacd1614184" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/components/burger/burger.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burger/burger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/burger/buildcontrol/buildcontrol.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burger/buildcontrol/buildcontrol.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/burgerbuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burgerbuilder.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,14 +61,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/burgerbuilder.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="598">
-                  <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+                <state relative-caret-position="483">
+                  <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrol/buildcontrol.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="184">
+                  <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -107,15 +117,6 @@
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="621">
-                  <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -147,7 +148,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/burger/burger.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="782">
@@ -155,6 +156,24 @@
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrol/buildcontrol.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="138">
+                  <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrol/buildcontrol.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="184">
+                  <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -217,8 +236,10 @@
         <option value="$PROJECT_DIR$/client/src/components/burger/burgeringre/burgeringre.css" />
         <option value="$PROJECT_DIR$/client/src/components/burger/burgeringre/burgeringre.js" />
         <option value="$PROJECT_DIR$/client/src/components/burger/burger.css" />
-        <option value="$PROJECT_DIR$/client/src/components/burgerbuilder.js" />
         <option value="$PROJECT_DIR$/client/src/components/burger/burger.js" />
+        <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrol/buildcontrol.css" />
+        <option value="$PROJECT_DIR$/client/src/components/burgerbuilder.js" />
+        <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrol/buildcontrol.js" />
       </list>
     </option>
   </component>
@@ -274,7 +295,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="burger" type="462c0819:PsiDirectoryNode" />
-              <item name="burgeringre" type="462c0819:PsiDirectoryNode" />
+              <item name="buildcontrol" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -448,7 +469,7 @@
       <workItem from="1555264150604" duration="3195000" />
       <workItem from="1555267371684" duration="6910000" />
       <workItem from="1555762004310" duration="1083000" />
-      <workItem from="1555773039356" duration="4417000" />
+      <workItem from="1555773039356" duration="4663000" />
     </task>
     <task id="LOCAL-00001" summary="adding dockerfile">
       <created>1555254864290</created>
@@ -611,11 +632,39 @@
       <option name="project" value="LOCAL" />
       <updated>1555777881344</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="when the array is empty , adding logic to it">
+      <created>1555778522024</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1555778522024</updated>
+    </task>
+    <task id="LOCAL-00025" summary="build control">
+      <created>1555778555346</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1555778555346</updated>
+    </task>
+    <task id="LOCAL-00026" summary="buildcontrol css">
+      <created>1555778585918</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1555778585918</updated>
+    </task>
+    <task id="LOCAL-00027" summary="buildcontrol css">
+      <created>1555778700049</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1555778700049</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19366000" />
+    <option name="totallyTimeSpent" value="19612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1417" extended-state="0" />
@@ -680,7 +729,10 @@
     <MESSAGE value="burger contents" />
     <MESSAGE value="burger builder" />
     <MESSAGE value="adding dynamic contents" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding dynamic contents" />
+    <MESSAGE value="when the array is empty , adding logic to it" />
+    <MESSAGE value="build control" />
+    <MESSAGE value="buildcontrol css" />
+    <option name="LAST_COMMIT_MESSAGE" value="buildcontrol css" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/nginx.conf">
@@ -830,16 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/burgerbuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/burger/burger.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -847,6 +889,30 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/burgerbuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrol/buildcontrol.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrol/buildcontrol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
         </state>
       </provider>
     </entry>
