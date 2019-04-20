@@ -20,7 +20,8 @@ class Buildcontrollist extends Component {
             return (
                 <Buildcontrol key={data.label} label={data.label}
                               added={() => this.props.ingredientadded(data.type)}
-                              removed={() => this.props.ingredientremoved(data.type)}/>
+                              removed={() => this.props.ingredientremoved(data.type)}
+                              disabled={this.props.disabled[data.type]}/>
             )
         })
 

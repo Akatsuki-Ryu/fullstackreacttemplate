@@ -68,6 +68,16 @@ class Burgerbuilder extends Component {
     }
 
     render() {
+        const disabledinfo = {
+            ...this.state.ingredients
+        };
+        //if it is below 0 , give ture
+        for (let key in disabledinfo) {
+            disabledinfo[key] = disabledinfo[key] <= 0;
+        }
+        console.log("disabled info ");
+        console.log(disabledinfo);
+
         return (
             <Aux>
                 <div>
@@ -75,7 +85,8 @@ class Burgerbuilder extends Component {
                 </div>
                 <Buildcontrollist
                     ingredientadded={this.addingredienthandler}
-                    ingredientremoved={this.removeingredienthandler}/>
+                    ingredientremoved={this.removeingredienthandler}
+                    disabled={disabledinfo}/>
             </Aux>
         );
     }
