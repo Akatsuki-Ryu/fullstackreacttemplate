@@ -22,7 +22,7 @@ class Buildcontrollist extends Component {
             )
         })
 
-        //
+
         return (
             <div className={"buildcontrol"}>
                 {controldatashow}

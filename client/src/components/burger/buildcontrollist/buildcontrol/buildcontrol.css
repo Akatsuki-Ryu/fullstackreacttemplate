@@ -29,10 +29,12 @@
     cursor: not-allowed;
 }
 
-.Label {
+.BuildControl .Label {
     padding: 10px;
     font-weight: bold;
     width: 80px;
+    color: #000;
+    /*background-color: black;*/
 }
 
 .BuildControl .Less {
@@ -50,7 +52,7 @@
     color: white;
 }
 
-.BuildControl .More:hover,.BuildControl .More:active {
+.BuildControl .More:hover, .BuildControl .More:active {
     background-color: #99703F;
     color: white;
 }
