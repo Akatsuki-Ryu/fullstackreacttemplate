@@ -14,18 +14,18 @@ class Buildcontrollist extends Component {
             {label: 'meat', type: 'meat'}
         ];
 
-        controldata.map(data => {
+        let controldatashow = controldata.map(data => {
+            console.log("data is");
             console.log(data);
+            return (
+                <Buildcontrol key={data.label} label={data.label}/>
+            )
         })
 
         //
         return (
             <div className={"buildcontrol"}>
-                {controldata.map(data=> {
-                     <Buildcontrol/>
-                    }
-
-                          )}
+                {controldatashow}
             </div>
         );
     }
