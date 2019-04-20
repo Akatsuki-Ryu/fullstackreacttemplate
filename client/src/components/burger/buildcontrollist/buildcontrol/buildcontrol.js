@@ -8,7 +8,7 @@ class Buildcontrol extends Component {
             <div className={"BuildControl"}>
                 <div className={"Label"}>{this.props.label}</div>
                 <button className={"Less"}>less</button>
-                <button className={"More"}>more</button>
+                <button className={"More"} onClick={this.props.added}>more</button>
             </div>
         );
     }

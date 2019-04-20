@@ -18,7 +18,8 @@ class Buildcontrollist extends Component {
             console.log("data is");
             console.log(data);
             return (
-                <Buildcontrol key={data.label} label={data.label}/>
+                <Buildcontrol key={data.label} label={data.label}
+                              added={()=>this.props.ingredientadded(data.type)}/>
             )
         })
 
