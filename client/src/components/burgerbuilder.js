@@ -24,7 +24,13 @@ class Burgerbuilder extends Component {
 
     addingredienthandler = (type) => {
         let oldcount = this.state.ingredients[type];
-        const updatedcount = oldcount + 1;
+        let updatedcount;
+        if (oldcount < 4) {
+            updatedcount = oldcount + 1;
+        } else {
+            updatedcount = 4;
+        }
+
         const updateingedient = {
             ...this.state.ingredients
         };
@@ -38,9 +44,16 @@ class Burgerbuilder extends Component {
         });
     };
 
-    removeingredienthandler=(type)=>{
+    removeingredienthandler = (type) => {
         let oldcount = this.state.ingredients[type];
-        const updatedcount = oldcount - 1;
+        let updatedcount;
+        if (oldcount > 0) {
+            updatedcount = oldcount - 1;
+        } else {
+            updatedcount = 0;
+        }
+
+
         const updateingedient = {
             ...this.state.ingredients
         };
