@@ -4,7 +4,7 @@ class Buildcontrollist extends Component {
     render() {
         return (
             <div>
-                build control
+                build controllist
             </div>
         );
     }
