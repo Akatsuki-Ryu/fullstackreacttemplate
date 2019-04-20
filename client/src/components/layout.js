@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
 import Aux from "../hoc/aux";
+import "layout.css"
 
 class Layout extends Component {
     render() {
+
+
         return (
             <Aux>
 
                 <p>toolbar, sidebar backdrop</p>
-                <div>
+                <main className={"contents"}>
                     {this.props.children}
-                </div>
+                </main>
 
             </Aux>
         );

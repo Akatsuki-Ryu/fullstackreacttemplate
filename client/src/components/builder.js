@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
+import Aux from "../hoc/aux";
 
 class Builder extends Component {
     render() {
         return (
-            <div>
-                the builder
-            </div>
+            <Aux>
+                <div>
+                    the builder
+                </div>
+                <div>build controls</div>
+            </Aux>
         );
     }
 }
