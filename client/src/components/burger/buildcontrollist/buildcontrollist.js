@@ -18,6 +18,7 @@ class Buildcontrollist extends Component {
             console.log("data is");
             console.log(data);
             return (
+
                 <Buildcontrol key={data.label} label={data.label}
                               added={() => this.props.ingredientadded(data.type)}
                               removed={() => this.props.ingredientremoved(data.type)}
@@ -28,6 +29,7 @@ class Buildcontrollist extends Component {
 
         return (
             <div className={"buildcontrol"}>
+                <p>current price {this.props.totalprice}</p>
                 {controldatashow}
             </div>
         );

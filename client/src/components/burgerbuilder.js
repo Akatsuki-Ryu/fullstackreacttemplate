@@ -36,7 +36,7 @@ class Burgerbuilder extends Component {
             ...this.state.ingredients
         };
         updateingedient[type] = updatedcount;
-        const priceaddval = updateingedient[type];
+        const priceaddval = INGREPRICES[type];
         const oldprice = this.state.totalprice;
         const newprice = oldprice + priceaddval;
         this.setState({
@@ -53,15 +53,13 @@ class Burgerbuilder extends Component {
         } else {
             updatedcount = 0;
         }
-
-
         const updateingedient = {
             ...this.state.ingredients
         };
         updateingedient[type] = updatedcount;
-        const priceaddval = updateingedient[type];
+        const priceaddval = INGREPRICES[type];
         const oldprice = this.state.totalprice;
-        const newprice = oldprice + priceaddval;
+        const newprice = oldprice - priceaddval;
         this.setState({
             totalprice: newprice,
             ingredients: updateingedient
@@ -91,7 +89,8 @@ class Burgerbuilder extends Component {
                 <Buildcontrollist
                     ingredientadded={this.addingredienthandler}
                     ingredientremoved={this.removeingredienthandler}
-                    disabled={disabledinfo}/>
+                    disabled={disabledinfo}
+                totalprice={this.state.totalprice}/>
             </Aux>
         );
     }
