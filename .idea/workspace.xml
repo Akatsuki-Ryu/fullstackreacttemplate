@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c587b6-7bb6-4e0b-802d-9bacd1614184" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/burgerbuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burgerbuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/navigation/toolbar/toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navigation/toolbar/toolbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +74,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="644">
@@ -84,6 +82,15 @@
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/navigation/toolbar/toolbar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="207">
+                  <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -112,18 +119,6 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.css">
               <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrol/buildcontrol.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
             </entry>
           </file>
         </leaf>
@@ -242,8 +237,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -297,6 +292,7 @@
         <option value="$PROJECT_DIR$/client/src/components/burgerbuilder.js" />
         <option value="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" />
         <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js" />
+        <option value="$PROJECT_DIR$/client/src/components/navigation/toolbar/toolbar.js" />
       </list>
     </option>
   </component>
@@ -337,49 +333,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullstackreacttemplate" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="burger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullstackreacttemplate" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullstackreacttemplate" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="backdrop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullstackreacttemplate" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="button" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullstackreacttemplate" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="modal" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -406,6 +359,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/components/layout" />
       <recent name="$PROJECT_DIR$/client/src/components/burger" />
       <recent name="$PROJECT_DIR$/client/src" />
     </key>
@@ -552,21 +506,7 @@
       <workItem from="1555264150604" duration="3195000" />
       <workItem from="1555267371684" duration="6910000" />
       <workItem from="1555762004310" duration="1083000" />
-      <workItem from="1555773039356" duration="23246000" />
-    </task>
-    <task id="LOCAL-00009" summary="rename parameters, start server to start node">
-      <created>1555271843771</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1555271843771</updated>
-    </task>
-    <task id="LOCAL-00010" summary="server volumes mapping">
-      <created>1555272317817</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1555272317817</updated>
+      <workItem from="1555773039356" duration="23502000" />
     </task>
     <task id="LOCAL-00011" summary="arrange install process">
       <created>1555272741353</created>
@@ -897,17 +837,31 @@
       <option name="project" value="LOCAL" />
       <updated>1555808559386</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="price information on summary">
+      <created>1555808886549</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1555808886549</updated>
+    </task>
+    <task id="LOCAL-00059" summary="toolbar js">
+      <created>1555809054426</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1555809054426</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38195000" />
+    <option name="totallyTimeSpent" value="38451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.27084988" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.27084988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -944,8 +898,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mapping build to build list ," />
-    <MESSAGE value="mapping build to build list , success" />
     <MESSAGE value="css" />
     <MESSAGE value="adding ingredient" />
     <MESSAGE value="remove ingredient" />
@@ -969,7 +921,9 @@
     <MESSAGE value="button css" />
     <MESSAGE value="button js component" />
     <MESSAGE value="cancel and continue in summary" />
-    <option name="LAST_COMMIT_MESSAGE" value="cancel and continue in summary" />
+    <MESSAGE value="price information on summary" />
+    <MESSAGE value="toolbar js" />
+    <option name="LAST_COMMIT_MESSAGE" value="toolbar js" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/nginx.conf">
@@ -1085,7 +1039,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/layout.css">
+    <entry file="file://$PROJECT_DIR$/client/src/components/layout/layout.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/burger/burgeringre/burgeringre.css">
@@ -1119,7 +1073,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/layout.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/layout/layout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
@@ -1141,8 +1095,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrol/buildcontrol.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="506">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1227,6 +1181,13 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/navigation/toolbar/toolbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
         </state>
       </provider>
     </entry>
