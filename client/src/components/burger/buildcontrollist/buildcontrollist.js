@@ -29,7 +29,7 @@ class Buildcontrollist extends Component {
 
         return (
             <div className={"buildcontrol"}>
-                <p>current price {this.props.totalprice}</p>
+                <p>current price {this.props.totalprice.toFixed(2)}</p>
                 {controldatashow}
                 <button className={"OrderButton"}
                         disabled={!this.props.canpurchase}
