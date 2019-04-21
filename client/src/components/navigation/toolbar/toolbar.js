@@ -7,7 +7,7 @@ class Toolbarcomp extends Component {
     render() {
         return (
             <header className={"toolbar"}>
-                <div>menu</div>
+                <div onClick={this.props.opensidemenu}>menu</div>
                 <Logocomp/>
                 <nav className={"desktoponly"}>
                     <Navilist/>
