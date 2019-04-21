@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c587b6-7bb6-4e0b-802d-9bacd1614184" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UI/modal/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/modal/modal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/UI/modal/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/modal/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/burgerbuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burgerbuilder.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,18 +24,6 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/burger/burger.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
-                  <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -57,11 +48,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/burgerbuilder.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="766">
-                  <caret line="104" column="32" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
+                <state relative-caret-position="811">
+                  <caret line="116" column="22" lean-forward="true" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -70,10 +61,31 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="437">
+                  <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="736">
+                  <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/UI/modal/modal.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="230">
-                  <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+                <state relative-caret-position="414">
+                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -93,18 +105,6 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js">
               <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="805">
-                  <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -178,7 +178,7 @@
             <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="299">
-                  <caret line="42" selection-start-line="42" selection-end-line="42" />
+                  <caret line="44" selection-start-line="44" selection-end-line="44" />
                 </state>
               </provider>
             </entry>
@@ -204,8 +204,20 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/UI/modal/modal.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="6" selection-start-column="1" selection-end-column="6" />
+                <state relative-caret-position="460">
+                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/components/burgerbuilder.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="490">
+                  <caret line="100" column="36" lean-forward="true" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -222,15 +234,6 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="667">
-                  <caret line="29" selection-start-line="29" selection-end-line="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -238,8 +241,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -247,6 +250,7 @@
     <findStrings>
       <find>express</find>
       <find>label</find>
+      <find>order</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -280,11 +284,12 @@
         <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrol/buildcontrol.css" />
         <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrol/buildcontrol.js" />
         <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.css" />
-        <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js" />
         <option value="$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js" />
+        <option value="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" />
+        <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js" />
         <option value="$PROJECT_DIR$/client/src/components/UI/modal/modal.css" />
-        <option value="$PROJECT_DIR$/client/src/components/UI/modal/modal.js" />
         <option value="$PROJECT_DIR$/client/src/components/burgerbuilder.js" />
+        <option value="$PROJECT_DIR$/client/src/components/UI/modal/modal.js" />
       </list>
     </option>
   </component>
@@ -332,25 +337,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="burger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullstackreacttemplate" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="burger" type="462c0819:PsiDirectoryNode" />
-              <item name="buildcontrollist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullstackreacttemplate" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="burger" type="462c0819:PsiDirectoryNode" />
-              <item name="buildcontrollist" type="462c0819:PsiDirectoryNode" />
-              <item name="buildcontrol" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fullstackreacttemplate" type="b2602c69:ProjectViewProjectNode" />
@@ -541,7 +527,7 @@
       <workItem from="1555264150604" duration="3195000" />
       <workItem from="1555267371684" duration="6910000" />
       <workItem from="1555762004310" duration="1083000" />
-      <workItem from="1555773039356" duration="19793000" />
+      <workItem from="1555773039356" duration="20967000" />
     </task>
     <task id="LOCAL-00001" summary="adding dockerfile">
       <created>1555254864290</created>
@@ -858,11 +844,32 @@
       <option name="project" value="LOCAL" />
       <updated>1555805293095</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="modal logic basic">
+      <created>1555805489585</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1555805489585</updated>
+    </task>
+    <task id="LOCAL-00047" summary="order summary component">
+      <created>1555805502633</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1555805502633</updated>
+    </task>
+    <task id="LOCAL-00048" summary="order summary contents">
+      <created>1555806030646</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1555806030646</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34742000" />
+    <option name="totallyTimeSpent" value="35916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1417" extended-state="0" />
@@ -905,9 +912,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="layout css import" />
-    <MESSAGE value="create burger component" />
-    <MESSAGE value="burger ingredient" />
     <MESSAGE value="burger contents" />
     <MESSAGE value="burger builder" />
     <MESSAGE value="adding dynamic contents" />
@@ -930,7 +934,10 @@
     <MESSAGE value="adding modal js" />
     <MESSAGE value="adding backdrop file" />
     <MESSAGE value="adding modal css" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding modal css" />
+    <MESSAGE value="modal logic basic" />
+    <MESSAGE value="order summary component" />
+    <MESSAGE value="order summary contents" />
+    <option name="LAST_COMMIT_MESSAGE" value="order summary contents" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/nginx.conf">
@@ -1065,8 +1072,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/burger/burger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="782">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1110,25 +1117,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
           <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/UI/modal/modal.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1137,10 +1134,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/UI/modal/modal.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="437">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1149,8 +1153,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/burgerbuilder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
-          <caret line="104" column="32" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
+        <state relative-caret-position="811">
+          <caret line="116" column="22" lean-forward="true" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/UI/modal/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

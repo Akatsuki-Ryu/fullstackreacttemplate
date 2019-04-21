@@ -32,8 +32,10 @@ class Buildcontrollist extends Component {
                 <p>current price {this.props.totalprice}</p>
                 {controldatashow}
                 <button className={"OrderButton"}
-disabled={!this.props.canpurchase}
-                >order</button>
+                        disabled={!this.props.canpurchase}
+                        onClick={this.props.ordered}>
+                    order
+                </button>
             </div>
         );
     }
