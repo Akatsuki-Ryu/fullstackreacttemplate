@@ -9,7 +9,7 @@ class Toolbarcomp extends Component {
             <header className={"toolbar"}>
                 <div>menu</div>
                 <Logocomp/>
-                <nav>
+                <nav className={"desktoponly"}>
                     <Navilist/>
                 </nav>
             </header>
