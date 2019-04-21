@@ -28,5 +28,11 @@
 
 .close {
     transform: translateX(-100%);
-    
+
+}
+
+
+.logosidedrawer{
+    margin: 32px;
+    height: 11%;
 }
