@@ -1,9 +1,17 @@
 import React, {Component} from 'react';
+import './naviitem.css'
 
 class Naviitem extends Component {
     render() {
+        console.log("this props active");
+        console.log(this.props.active);
         return (
-            <li><a href="/">a link</a></li>
+            <li className={"navigatonitem"}>
+                <a className={this.props.active ? "active" : null}
+                   href={this.props.link}>
+                    {this.props.children}
+                </a>
+            </li>
         );
     }
 }

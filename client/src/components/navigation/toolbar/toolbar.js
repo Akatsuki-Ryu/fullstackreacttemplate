@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './toolbar.css'
 import Logocomp from "../../logo/logo";
+import Navilist from "../navilist/navilist";
 
 class Toolbarcomp extends Component {
     render() {
@@ -9,7 +10,7 @@ class Toolbarcomp extends Component {
                 <div>menu</div>
                 <Logocomp/>
                 <nav>
-                    <ul>links</ul>
+                    <Navilist/>
                 </nav>
             </header>
         );
