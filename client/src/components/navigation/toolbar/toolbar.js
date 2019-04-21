@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import './toolbar.css'
 
 class Toolbarcomp extends Component {
     render() {
         return (
-            <header>
+            <header className={"toolbar"}>
                 <div>menu</div>
                 <div>logo</div>
                 <nav>

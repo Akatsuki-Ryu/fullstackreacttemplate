@@ -24,7 +24,7 @@ class Burgerbuilder extends Component {
         totalprice: 11,
         maxamout: 4,
         canpurchase: false,
-        modalpurchase: true
+        modalpurchase: false
     }
 
     updatepurchasestate = (ingredients) => {
