@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Buttoncomp from "../../UI/button/buttoncomp";
 
 class Ordersummary extends Component {
     render() {
@@ -14,8 +15,10 @@ class Ordersummary extends Component {
 
                 {ingredientsummary}
 
-                <button>cancel</button>
-                <button>continue</button>
+
+                <Buttoncomp clicked={this.props.closemodal}>cancel</Buttoncomp>
+                <Buttoncomp clicked={this.props.purchasecontinue}>continue</Buttoncomp>
+
 
 
             </div>
