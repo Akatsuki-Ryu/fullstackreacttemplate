@@ -19,10 +19,26 @@ class Burgerbuilder extends Component {
             cheese: 0,
             meat: 0
         },
-        totalprice: 0,
-        maxamout: 4
+        totalprice: 4,
+        maxamout: 4,
+        canpurchase: false
     }
 
+    updatepurchasestate = (ingredients) => {
+        // const ingredients = {
+        //     ...this.state.ingredients
+        // };
+
+        //todo checkout waht this is doing
+        const sum = Object.keys(ingredients)
+            .map(igkey => {
+                return ingredients[igkey];
+            })
+            .reduce((sum, el) => {
+                return sum + el;
+            }, 0);
+        this.setState({canpurchase: sum > 0})
+    }
     addingredienthandler = (type) => {
         let oldcount = this.state.ingredients[type];
         let updatedcount;
@@ -43,6 +59,7 @@ class Burgerbuilder extends Component {
             totalprice: newprice,
             ingredients: updateingedient
         });
+        this.updatepurchasestate(updateingedient);
     };
 
     removeingredienthandler = (type) => {
@@ -64,6 +81,7 @@ class Burgerbuilder extends Component {
             totalprice: newprice,
             ingredients: updateingedient
         });
+        this.updatepurchasestate(updateingedient);
     }
 
     render() {
@@ -72,7 +90,7 @@ class Burgerbuilder extends Component {
         };
         //if it is below 0 , give ture
         for (let key in disabledinfo) {
-            if (disabledinfo[key] <= 0 ) {
+            if (disabledinfo[key] <= 0) {
                 disabledinfo[key] = true;
             } else {
                 disabledinfo[key] = false;
@@ -90,7 +108,8 @@ class Burgerbuilder extends Component {
                     ingredientadded={this.addingredienthandler}
                     ingredientremoved={this.removeingredienthandler}
                     disabled={disabledinfo}
-                totalprice={this.state.totalprice}/>
+                    canpurchase={this.state.canpurchase}
+                    totalprice={this.state.totalprice}/>
             </Aux>
         );
     }
