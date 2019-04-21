@@ -3,6 +3,7 @@ import Aux from "../hoc/aux";
 import Burger from "./burger/burger";
 import Buildcontrollist from "./burger/buildcontrollist/buildcontrollist";
 import Modal from "./UI/modal/modal";
+import Ordersummary from "./burger/ordersummary/ordersummary";
 
 const INGREPRICES = {
     salad: 5,
@@ -102,7 +103,9 @@ class Burgerbuilder extends Component {
 
         return (
             <Aux>
-                <Modal>something</Modal>
+                <Modal>
+                    <Ordersummary ingredients={this.state.ingredients}/>
+                </Modal>
                 <div>
                     <Burger ingredients={this.state.ingredients}/>
                 </div>
