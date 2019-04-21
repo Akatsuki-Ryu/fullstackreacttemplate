@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './Post.css';
+import './Postcomp.css';
 
-const post = (props) => (
+const postcomp = (props) => (
     <article className="Post">
         <h1>Title</h1>
         <div className="Info">
@@ -11,4 +11,4 @@ const post = (props) => (
     </article>
 );
 
-export default post;
+export default postcomp;

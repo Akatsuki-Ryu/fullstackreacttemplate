@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import './FullPost.css';
+import './FullwidthPost.css';
 
-class FullPost extends Component {
+class FullwidthPost extends Component {
     render () {
         let post = <p>Please select a Post!</p>;
         post = (
@@ -19,4 +19,4 @@ class FullPost extends Component {
     }
 }
 
-export default FullPost;
+export default FullwidthPost;

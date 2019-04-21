@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import './NewPost.css';
+import './NewPostcomp.css';
 
-class NewPost extends Component {
+class NewPostcomp extends Component {
     state = {
         title: '',
         content: '',
@@ -28,4 +28,4 @@ class NewPost extends Component {
     }
 }
 
-export default NewPost;
+export default NewPostcomp;

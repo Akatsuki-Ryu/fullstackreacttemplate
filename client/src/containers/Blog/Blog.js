@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import Post from '../../components/Post/Post';
-import FullPost from '../../components/FullPost/FullPost';
-import NewPost from '../../components/NewPost/NewPost';
+import Post from '../../components/Post/Postcomp';
+import FullwidthPost from '../../components/FullPost/FullwidthPost';
+import NewPostcomp from '../../components/NewPost/NewPostcomp';
 import './Blog.css';
 
 class Blog extends Component {
@@ -15,10 +15,10 @@ class Blog extends Component {
                     <Post />
                 </section>
                 <section>
-                    <FullPost />
+                    <FullwidthPost />
                 </section>
                 <section>
-                    <NewPost />
+                    <NewPostcomp />
                 </section>
             </div>
         );
