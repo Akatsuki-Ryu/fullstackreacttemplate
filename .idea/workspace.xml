@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c587b6-7bb6-4e0b-802d-9bacd1614184" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/burgerbuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burgerbuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UI/button/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/button/button.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,18 +25,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="207">
                   <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/layout.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -103,11 +89,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="506">
-                  <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+                <state relative-caret-position="368">
+                  <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/UI/button/button.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="138">
+                  <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -239,8 +234,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -289,6 +284,7 @@
         <option value="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" />
         <option value="$PROJECT_DIR$/client/src/components/burgerbuilder.js" />
         <option value="$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js" />
+        <option value="$PROJECT_DIR$/client/src/components/UI/button/button.js" />
       </list>
     </option>
   </component>
@@ -535,14 +531,7 @@
       <workItem from="1555264150604" duration="3195000" />
       <workItem from="1555267371684" duration="6910000" />
       <workItem from="1555762004310" duration="1083000" />
-      <workItem from="1555773039356" duration="22082000" />
-    </task>
-    <task id="LOCAL-00004" summary="adding dockercompose">
-      <created>1555265268331</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1555265268331</updated>
+      <workItem from="1555773039356" duration="22219000" />
     </task>
     <task id="LOCAL-00005" summary="indroducing debug container and prod container">
       <created>1555268026518</created>
@@ -880,11 +869,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555807617745</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="button js">
+      <created>1555807762702</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1555807762702</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37031000" />
+    <option name="totallyTimeSpent" value="37168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1417" extended-state="0" />
@@ -927,7 +923,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build control" />
     <MESSAGE value="buildcontrollist and buildcontrol" />
     <MESSAGE value="buildcontrol css" />
     <MESSAGE value="style in build control component" />
@@ -952,7 +947,8 @@
     <MESSAGE value="backdrop component" />
     <MESSAGE value="backdrop css" />
     <MESSAGE value="backdrop logic done" />
-    <option name="LAST_COMMIT_MESSAGE" value="backdrop logic done" />
+    <MESSAGE value="button js" />
+    <option name="LAST_COMMIT_MESSAGE" value="button js" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/nginx.conf">
@@ -1191,8 +1187,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="368">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/UI/button/button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>
