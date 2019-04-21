@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Aux from "../../hoc/aux";
 import "./layout.css"
 import Toolbarcomp from "../navigation/toolbar/toolbar";
+import Sidedrawer from "../navigation/sidedrawer/sidedrawer";
 
 class Layout extends Component {
     render() {
@@ -11,6 +12,7 @@ class Layout extends Component {
             <Aux>
 
                 <p>toolbar, sidebar backdrop</p>
+                <Sidedrawer/>
                 <Toolbarcomp/>
                 <main className={"contents"}>
                     {this.props.children}
@@ -22,3 +24,4 @@ class Layout extends Component {
 }
 
 export default Layout;
+π
