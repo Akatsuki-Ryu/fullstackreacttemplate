@@ -10,7 +10,7 @@ class Sidemenu extends Component {
 
     render() {
         let attachclass;
-        if (this.props.open) {
+        if (this.props.statusopen) {
             attachclass = "sidedraw open";
         } else {
             attachclass="sidedraw close"
@@ -18,8 +18,8 @@ class Sidemenu extends Component {
 
         return (
             <Aux>
-                <Backdrop show={this.props.open}
-                clicked={this.props.closed}/>
+                <Backdrop show={this.props.statusopen}
+                clicked={this.props.close}/>
                 <div className={attachclass}>
                     <div className={"logosidedrawer"}>
                         <Logocomp/></div>

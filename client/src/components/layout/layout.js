@@ -22,8 +22,8 @@ class Layout extends Component {
             <Aux>
 
                 <p>toolbar, sidebar backdrop</p>
-                <Sidemenu open={this.state.showsidemneu}
-                          closed={this.sidemenuclosehandler}/>
+                <Sidemenu statusopen={this.state.showsidemneu}
+                          close={this.sidemenuclosehandler}/>
                 <Toolbarcomp opensidemenu={this.sidemenuopenhandler}/>
                 <main className={"contents"}>
                     {this.props.children}
