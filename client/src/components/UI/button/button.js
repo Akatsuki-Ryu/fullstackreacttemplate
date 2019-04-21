@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 
 class Button extends Component {
     render() {
-        return (
+        return (//this can be conditional style
             <button onClick={this.props.clicked}
-            >{this.props.children}</button>
+            className={"Button"}>{this.props.children}
+            </button>
         );
     }
 }
