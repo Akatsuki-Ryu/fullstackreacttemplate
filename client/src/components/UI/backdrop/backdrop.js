@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
+import './backdrop.css'
+
+
 
 class Backdrop extends Component {
     render() {
+
         return (
-            <div>
-                
-            </div>
+       this.props.show?<div></div>
         );
     }
 }
