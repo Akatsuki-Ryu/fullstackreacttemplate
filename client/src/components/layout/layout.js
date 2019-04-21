@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Aux from "../hoc/aux";
+import Aux from "../../hoc/aux";
 import "./layout.css"
 
 class Layout extends Component {
