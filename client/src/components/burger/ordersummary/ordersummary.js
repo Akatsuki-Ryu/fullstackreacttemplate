@@ -14,7 +14,9 @@ class Ordersummary extends Component {
 
                 {ingredientsummary}
 
-                <button>continue checkout</button>
+                <button>cancel</button>
+                <button>continue</button>
+
 
             </div>
         );

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c587b6-7bb6-4e0b-802d-9bacd1614184" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/UI/modal/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/modal/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/burgerbuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/burgerbuilder.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +49,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/burgerbuilder.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="650">
-                  <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+                <state relative-caret-position="522">
+                  <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -75,8 +73,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/UI/modal/modal.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+                <state relative-caret-position="529">
+                  <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -93,14 +91,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="345">
-                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="506">
+                  <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -275,12 +282,12 @@
         <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrol/buildcontrol.css" />
         <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrol/buildcontrol.js" />
         <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.css" />
-        <option value="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" />
         <option value="$PROJECT_DIR$/client/src/components/burger/buildcontrollist/buildcontrollist.js" />
         <option value="$PROJECT_DIR$/client/src/components/UI/modal/modal.css" />
-        <option value="$PROJECT_DIR$/client/src/components/burgerbuilder.js" />
         <option value="$PROJECT_DIR$/client/src/components/UI/modal/modal.js" />
         <option value="$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.css" />
+        <option value="$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js" />
+        <option value="$PROJECT_DIR$/client/src/components/burgerbuilder.js" />
         <option value="$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js" />
       </list>
     </option>
@@ -528,14 +535,7 @@
       <workItem from="1555264150604" duration="3195000" />
       <workItem from="1555267371684" duration="6910000" />
       <workItem from="1555762004310" duration="1083000" />
-      <workItem from="1555773039356" duration="21991000" />
-    </task>
-    <task id="LOCAL-00003" summary="server side adding nodemon">
-      <created>1555264775857</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1555264775857</updated>
+      <workItem from="1555773039356" duration="22082000" />
     </task>
     <task id="LOCAL-00004" summary="adding dockercompose">
       <created>1555265268331</created>
@@ -873,11 +873,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555806967369</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="backdrop logic done">
+      <created>1555807617745</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1555807617745</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36940000" />
+    <option name="totallyTimeSpent" value="37031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1417" extended-state="0" />
@@ -920,7 +927,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="when the array is empty , adding logic to it" />
     <MESSAGE value="build control" />
     <MESSAGE value="buildcontrollist and buildcontrol" />
     <MESSAGE value="buildcontrol css" />
@@ -945,7 +951,8 @@
     <MESSAGE value="show modal view and with animations" />
     <MESSAGE value="backdrop component" />
     <MESSAGE value="backdrop css" />
-    <option name="LAST_COMMIT_MESSAGE" value="backdrop css" />
+    <MESSAGE value="backdrop logic done" />
+    <option name="LAST_COMMIT_MESSAGE" value="backdrop logic done" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/nginx.conf">
@@ -1132,6 +1139,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/burgerbuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/UI/modal/modal.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -1139,10 +1169,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/UI/modal/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state relative-caret-position="529">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,36 +1189,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/burgerbuilder.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/burger/ordersummary/ordersummary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/UI/modal/modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/UI/backdrop/backdrop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="506">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>

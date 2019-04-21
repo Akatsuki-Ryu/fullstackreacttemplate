@@ -7,7 +7,7 @@ class Backdrop extends Component {
 
         return (
             this.props.show ? <div className={"backdrop"}
-            onClick={this.props.clicked}></div> : null
+                                   onClick={this.props.clicked}></div> : null
         );
     }
 }
