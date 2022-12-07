@@ -7,11 +7,11 @@
     "start-prod": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "^1.19.1",
+    "body-parser": "^1.20.1",
     "cookie-parser": "~1.4.6",
     "debug": "~4.3.3",
     "ejs": "^3.1.6",
-    "express": "^4.17.2",
+    "express": "^4.18.2",
     "http-errors": "^2.0.0",
     "jade": "~1.11.0",
     "mongoose": "^6.1.6",
@@ -19,8 +19,8 @@
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    "body-parser": "^1.19.1",
-    "express": "^4.17.2",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "express-pino-logger": "^7.0.0",
     "node-env-run": "^4.0.2",
     "nodemon": "^2.0.15",
